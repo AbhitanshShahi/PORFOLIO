@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+@media (max-width: 768px) {
+  .title {
+    flex-direction: column;
+    text-align: center;
+  }
+nav{
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px;
+}
+nav .head{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+nav .side{
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+}
+body{
+    background-color: #0e0f1a;
+    color: white;
+    font-family: "Merriweather", sans-serif;
+}
+h4{
+    font-family: "Playfair Display", serif;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 50px;
+    background-color: transparent;
+    position: relative;
+}
+ul{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+ul li{
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3 ease;
+}
+ul li:hover{
+    background-color: whitesmoke;
+    color: #0e0f1a;
+}
+.title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 100px;
+    background-color: #0e0f1a;
+    min-height: 100vh;
+    color: white;
+}
+.image-self{
+    flex: 1;
+    display: flex;
+    text-align: right;
+    justify-content: center;
+}
+.image-self img{
+    max-width: 100%;
+    height: 80vh;
+    object-fit: contain;
+    border-radius: 20px;
+}
+.title-text{
+    flex: 1;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+}
+.title-text h1{
+    font-size: 45px;
+    /* font-weight: bold;
+    font-style: normal; */
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+.title-text h1 span{
+    color: #a29bfe;
+    position: relative;
+}
+.title-text p{
+    font-size: 18px;
+    color:  #bbb;
+    margin-bottom: 40px;
+}
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.skill {
+  background-color: #1e1e2f;
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-size: 14px;
+  border: 1px solid #5e5e7a;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.skill:hover {
+  background-color: #3f3f5a;
+  transform: scale(1.05);
+}
+.about{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 60px 80px;
+    align-items: flex-start;
+    background-color: #0f0f1a;
+    flex-wrap: wrap;
+}
+.about-title{
+    flex: 0 0 200px;
+    font-size: 32px;
+    font-weight: 800;
+    text-align: left;
+    line-height: 1.2;
+}
+.about-text{
+    font-size: 18px;
+    color: #e0e0e0;
+    line-height: 1.7;
+    max-width: 900px;
+    font-family: "Montserrat", sans-serif;
+}
+.contact{
+    padding: 60px 80px;
+    margin-top: 20px;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    gap: 100px;
+}
+.contact-title{
+    /* flex: 0 0 200px; */
+    font-size: 32px;
+    font-weight: 800;
+    text-align: left;
+    line-height: 1.2;  
+    white-space: nowrap; 
+}
+.linkedin{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0A66C2;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+svg{
+    fill: white;
+    width: 30px;
+    height: 30px;
+}
+.links{
+    margin-top: 20px;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+.linkedin:hover{
+    background-color: #032a54;
+    scale: 1.1;
+}
+.gmail{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.gmail svg{
+    fill: red;
+    width: 30px;
+    height: 30px;
+}
+.gmail:hover{
+    background-color: rgb(176, 176, 176);
+    scale: 1.1;
+}
+.twitter{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.twitter:hover{
+    scale: 1.15;
+}
+.github{
+     display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.github:hover{
+    background-color: #020b27;
+    scale: 1.1;
+}
