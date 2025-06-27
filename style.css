@@ -17,7 +17,7 @@ nav .head{
     font-size: 20px;
     margin-bottom: 10px;
 }
-nav .side{
+nav .side ul{
     flex-direction: column;
     gap: 10px;
     width: 100%;
@@ -45,7 +45,12 @@ nav {
     align-items: center;
     padding: 25px 50px;
     background-color: transparent;
-    position: relative;
+    position: fixed; /* ✅ Sticks navbar to top */
+  top: 0;
+  left: 0;
+  width: 93%;
+  z-index: 800;
+  background-color: #0e0f1a; /* or rgba(...) if you want transparent */
 }
 nav a {
   color: white;
@@ -68,15 +73,15 @@ ul{
     display: flex;
     gap: 30px;
 }
-ul li{
+ul li a{
     cursor: pointer;
     text-decoration: none;
     font-weight: 500;
-    transition: color 0.3 ease;
+    transition: color 0.3s ease;
 }
-ul li:hover{
-    background-color: whitesmoke;
-    color: #0e0f1a;
+ul li a:hover{
+    /* background-color: whitesmoke; */
+    color: #ff3366;
 }
 .title{
     display: flex;
